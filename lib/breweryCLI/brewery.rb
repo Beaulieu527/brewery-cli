@@ -1,3 +1,3 @@
-class Brewery
+class BreweryCLI :: Brewery
 
 end

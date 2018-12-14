@@ -1,6 +1,8 @@
-require "breweryCLI/version"
+require_relative "./breweryCLI/version"
+require 'open-uri'
+require 'nokogiri'
+require 'pry'
 
-module BreweryCLI
-  class Error < StandardError; end
-  # Your code goes here...
-end
+require_relative "./breweryCLI/version"
+require_relative './breweryCLI/brewery'
+require_relative './breweryCLI/cli'
