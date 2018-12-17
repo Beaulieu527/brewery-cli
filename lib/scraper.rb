@@ -1,11 +1,10 @@
 require "pry"
-require "nokogiri"
 
-class Scraper
+  class BreweryAPI
 
-  def get_page
-      new = Nokogiri::HTML(open("https://api.openbrewerydb.org/"))
-    end
-
+  def self.get_massachusetts_breweries
+    page = open("https://api.openbrewerydb.org/breweries?by_state=Massachusetts&per_page=50&page=1")
+    data = JSON.parse(page.read)
+  end
 
 end
